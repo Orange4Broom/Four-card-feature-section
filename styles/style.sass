@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap')
 
 * 
+    box-sizing: border-box
     font-family: 'Poppins', sans-serif
 
     body
@@ -8,21 +9,122 @@
         flex-direction: column
         justify-content: center
         align-items: center
+
         min-height: 100vh
         width: 100%
 
         margin: 0
         padding: 0
 
-        background: pink
+        background: hsl(0, 0%, 98%)
 
         .thin-header
+            font-size: 36px
             font-weight: 200
 
+            color: hsl(234, 12%, 34%)
+
         .thick-header
+            font-size: 36px
             font-weight: 600
 
+            color: hsl(234, 12%, 34%)
+
         .under-header
+            font-size: 15px
             font-weight: 400
 
-        
+            color: hsl(229, 6%, 66%)
+
+            text-align: center
+
+            max-width: 500px
+
+            margin-top: 20px
+
+        #cards-body
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+
+            gap: 10px
+
+            height: 650px
+            width: 1400px
+
+            .one-card
+                display: flex
+                flex-direction: column
+                justify-content: flex-start
+                align-items: center
+
+                height: 250px
+                width: 350px
+
+                padding: 30px
+
+                border-radius: 2%
+
+                box-shadow: 0 10px 20px -5px hsl(229, 6%, 80%)
+
+                background: white
+
+            .one-card:nth-child(1)
+                border-top: 4px solid hsl(180, 62%, 55%)
+
+            .two-cards .one-card:nth-child(1)
+                border-top: 4px solid hsl(0, 78%, 62%)
+
+            .two-cards .one-card:nth-child(2)
+                border-top: 4px solid hsl(34, 97%, 64%)
+
+            .one-card:nth-child(3)
+                border-top: 4px solid hsl(212, 86%, 64%)
+
+            .two-cards
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+
+                gap: 30px
+
+                height: 650px
+                width: 400px
+
+            .card-header
+                font-size: 18px
+                font-weight: 600
+
+            .card-paragraf
+                font-size: 13px
+
+                color: hsl(229, 6%, 66%)
+
+            .card-image
+                display: flex
+                justify-content: flex-end
+                align-items: flex-end
+                height: 100px
+                width: 290px
+
+                .image
+                    height: 60px
+                    width: 60px
+
+                .supervisor
+                    background-image: url('/images/icon-supervisor.svg')
+                    background-size: cover
+
+                .team-builder
+                    background-image: url('/images/icon-team-builder.svg')
+                    background-size: cover
+
+                .karma
+                    background-image: url('/images/icon-karma.svg')    
+                    background-size: cover
+
+                .calculator
+                    background-image: url('/images/icon-calculator.svg')
+                    background-size: cover   
