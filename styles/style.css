@@ -12,18 +12,19 @@
   width: 100%;
   margin: 0;
   padding: 0;
-
   background: hsl(0deg, 0%, 98%);
 }
 * body .thin-header {
   font-size: 36px;
   font-weight: 200;
   color: hsl(234deg, 12%, 34%);
+  max-width: 500px;
 }
 * body .thick-header {
   font-size: 36px;
   font-weight: 600;
   color: hsl(234deg, 12%, 34%);
+  max-width: 500px;
 }
 * body .under-header {
   font-size: 15px;
@@ -40,7 +41,7 @@
   align-items: center;
   gap: 10px;
   height: 650px;
-  width: 1400px;
+  width: 1100px;
 }
 * body #cards-body .one-card {
   display: flex;
@@ -109,4 +110,34 @@
 * body #cards-body .card-image .calculator {
   background-image: url("/images/icon-calculator.svg");
   background-size: cover;
+}
+
+@media (max-width: 1150px) {
+  body .thin-header {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 50px;
+  }
+  body .thick-header {
+    text-align: center;
+    font-size: 26px;
+  }
+  body .under-header {
+    font-size: 16px;
+    margin: 20px 30px 0 30px;
+  }
+  body #cards-body {
+    flex-direction: column;
+    height: 1200px;
+    width: auto;
+    gap: 30px;
+  }
+  body #cards-body .one-card {
+    max-width: 500px;
+  }
+  body #cards-body .two-cards {
+    gap: 30px;
+    height: auto;
+    width: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
